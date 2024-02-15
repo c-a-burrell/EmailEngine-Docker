@@ -26,10 +26,13 @@ All the following are unnamed (order dependant) children of `services.emailengin
 Before committing any changes to the configurations to Git they be tested locally by doing the following:
 * Navigate to the base directory of this project and enter the following:
 ```commandline
-docker-compose up
+docker-compose up -d
 ```
 * After a minute or so after both the `redis-1` and `emailengine-1` processes spin up, connect to `http://localhost:3000` to verify connectivity.
-* To exit, press `CTRL+Z`.
+* To exit, enter the following:
+```commandline
+docker-compose down
+```
 
 ## References
 * [Email Engine Docker Setup](https://emailengine.app/docker)

@@ -32,6 +32,9 @@ services:
             EENGINE_SECRET: 'secret'
             # Database connection URL
             EENGINE_REDIS: 'redis://redis:6379/2'
+            #Comment the above and uncomment below if you are using a locally running Redis instance.
+            #EENGINE_REDIS: 'redis://host.docker.internal:6379/2'
+
 
     redis:
         image: redis:alpine
